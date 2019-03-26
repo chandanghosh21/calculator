@@ -3,18 +3,37 @@
         <title>Calculator</title>
     </header>
     <body>
-        <div class="container">
-            <div class="form">
-                <form name="calButton">
-                    <div class="row">
-                    
-<h1>TEST CALCULATOfgsdR sjhd</h1>
-
-                    </div>
-
-                </form>
+        <center><div style="width:100%; height:30%; background-color:beige">
+           <h1>Calculator</h1>
+        </div></center>
+        <div id="container" style="width:100%; height:100%; background-color:whitesmoke">
+            <div id="form" style="width:16.5%; height:25%; float:left">              
+               <table> 
+                   <tr>
+                       <td>X:</td>
+                       <td><input type="number" id="x"> </td>
+                   </tr>
+                   <tr>
+                        <td>OPS:</td>
+                        <td><select id="dropdown">                             
+                            <option value="+" selected>+</option>
+                            <option value="-" >-</option>
+                            <option  value="*">*</option>
+                            <option  value="/">/</option>
+                        </select>
+                        </td>
+                    </tr>
+                   <tr>
+                        <td>Y:</td>
+                        <td><input type="number" id="y"> </td>
+                    </tr>
+               </table>
+               <input type="button" onclick="cal()" id="button" value="Calculate" style="width:98%">
+            </div> 
+            <div style="width:16.5%; height:25%; float:left">
+                    <input type="text" readonly="true"  name="z" id="z" style="width:100%; height:44%; text-align:center">
             </div>
-        </div>
-      
+       </div>   
+    <script src="javaScript.js"></script>  
     </body>
 </html>
